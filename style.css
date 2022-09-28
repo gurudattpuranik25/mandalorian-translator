@@ -29,7 +29,7 @@ h3 {
 
 .container {
   width: 50%;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -74,6 +74,12 @@ textarea {
   padding-top: 1.5rem;
   gap: 1.5rem;
   font-size: 1.5rem;
+}
+
+.errorMessage {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .social-icons i {

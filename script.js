@@ -1,6 +1,7 @@
 const inputText = document.getElementById("textarea");
 const translate = document.getElementById("translate");
 const result = document.getElementById("result");
+const error = document.querySelector(".errorMessage");
 
 const url = "https://api.funtranslations.com/translate/mandalorian.json";
 
@@ -16,7 +17,7 @@ function translateThetext() {
         ? (result.innerText = data.contents.translated)
         : (result.innerText = "translating...")
     )
-    .catch((error) => alert(error));
+    .catch((error) => (errorMessage.innerText = error));
 }
 
 translate.addEventListener("click", translateThetext);
